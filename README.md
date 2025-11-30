@@ -6,7 +6,7 @@ This project is designed to be beginner-friendly, simple, and fast to set up.
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Modular Command System** — Every command is stored as a separate file in `commands/`
 - **Simple Configuration** — All important settings inside `config.json`
@@ -16,7 +16,7 @@ This project is designed to be beginner-friendly, simple, and fast to set up.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Node.js**
 - **Discord.js**
@@ -24,22 +24,22 @@ This project is designed to be beginner-friendly, simple, and fast to set up.
 
 ---
 
-## 📦 Installation
+## Installation
 
-### 1️⃣ Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/neerajcli/alfred.git
 cd alfred
 ```
 
-### 2️⃣ Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Configure the bot by editing `config.json`
+### Configure the bot by editing `config.json`
 
 ```json
 {
@@ -51,7 +51,7 @@ npm install
 }
 ```
 
-### 4️⃣ Start the bot
+### Start the bot
 
 ```bash
 node server.js
@@ -59,7 +59,7 @@ node server.js
 
 ---
 
-## 🛡️ Security Notes
+## Security Notes
 
 - Never commit your Discord token.
 - Use environment variables if hosting online.
