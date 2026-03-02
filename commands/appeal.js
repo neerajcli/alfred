@@ -30,7 +30,7 @@ const ms = require("parse-ms")
         const targetChannelID = '1327903156956561439';
         const targetChannel = client.channels.cache.get(targetChannelID);
 
-        if (!targetChannel) return;
+        if (!targetChannel) return message.channel.send('A critical error occured. Please contact developers.');        ;
     
         message.channel.send('Please choose the type of appeal:\n1️⃣ User Blacklist Appeal\n2️⃣ Server Blacklist Appeal')
             .then(async (msg) => {
