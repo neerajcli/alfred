@@ -51,6 +51,8 @@ npm install
 }
 ```
 
+### Add the DBL API key in `index.js`
+
 ### Start the bot
 
 ```bash
