@@ -7,19 +7,17 @@ module.exports = {
   description: "Sends a random yummy food picture",
   usage: "food",
   execute: async (client, message, args) => {
-    if (message.author.id !== "504635146553524234") return message.channel.send("Temporarily Disabled")
-    got("https://www.reddit.com/r/foodporn/random/.json")
+    got("https://foodish-api.com/api/")
       .then(response => {
         let content = JSON.parse(response.body);
-        let memeImage = content[0].data.children[0].data.url;
-        let memeTitle = content[0].data.children[0].data.title;
+        let foodImage = content.image;
 
-        const MemeEmbed = new discord.MessageEmbed()
-          .setColor("RANDOM")
-          .setTitle(`${memeTitle}`)
-          .setImage(memeImage);
+        const foodEmbed = new discord.MessageEmbed()
+          .setColor("#FFFFFF")
+          .setTitle("Yum!")
+          .setImage(foodImage);
 
-        message.channel.send(MemeEmbed);
+        message.channel.send(foodEmbed);
       })
       .catch(console.error);
   }
