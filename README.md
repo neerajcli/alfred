@@ -53,6 +53,10 @@ npm install
 
 ### Add the DBL API key in `index.js`
 
+```js
+const dbl = new DBL("YOUR DBL API KEY HERE", { webhookPort: 5000, webhookAuth: "YOUR DBL API KEY HERE" });
+```
+
 ### Start the bot
 
 ```bash
