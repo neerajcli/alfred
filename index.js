@@ -5,7 +5,7 @@ const client = new discord.Client({
   disabledEvents: ["TYPING_START"]
 });
 const DBL = require("dblapi.js");
-const dbl = new DBL("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDIzNDMyNzc0OTA5OTUyMSIsImJvdCI6dHJ1ZSwiaWF0IjoxNjAyMjk5MzIyfQ.MJXY--mPk1GAzr6rg4llAGrsMLahPvVvf86aB0F7DEo", { webhookPort: 5000, webhookAuth: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDIzNDMyNzc0OTA5OTUyMSIsImJvdCI6dHJ1ZSwiaWF0IjoxNjAyMjk5MzIyfQ.MJXY--mPk1GAzr6rg4llAGrsMLahPvVvf86aB0F7DEo" });
+const dbl = new DBL("YOUR DBL API KEY HERE", { webhookPort: 5000, webhookAuth: "YOUR DBL API KEY HERE" });
 dbl.webhook.on('vote', vote => {
   console.log(`User with ID ${vote.user} just voted!`);
 });
