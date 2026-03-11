@@ -18,9 +18,9 @@ This project is designed to be beginner-friendly, simple, and fast to set up.
 
 ## Tech Stack
 
-- **Node.js**
-- **Discord.js**
-- **Quick.db**
+- **Node.js v16**
+- **Discord.js v12**
+- **Quick.db v9**
 
 ---
 
