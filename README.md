@@ -54,7 +54,7 @@ npm install
 ### Start the bot
 
 ```bash
-node server.js
+node index.js
 ```
 
 ---
