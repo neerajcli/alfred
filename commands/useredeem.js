@@ -1,0 +1,23 @@
+module.exports = {
+    name: "useredeem",
+    category: "Economy",
+    description: "Use your redeem and get 20000$",
+    execute: async (client, message, args) => {
+        const db = client.db;
+        const Discord = client.discord;
+        if (message.author.bot) return;
+        const authorpass = await db.get('econpass_' + message.author.id);
+        if (authorpass == null) return message.channel.send("Please create your bank password using `a!reset-pass` to use this command");
+        let redeem = await db.get(`redeem_${message.author.id}`)
+        if (redeem === null) await db.set('redeem_' + message.author.id, 0)
+        if (redeem <= 0) return message.channel.send('You dont have any available redeems!')
+        await db.sub('redeem_' + message.author.id, 1)
+        await db.add('cash_' + message.author.id, 20000)
+        const embed = new Discord.MessageEmbed()
+            .setTitle("Use redeem")
+            .setDescription('You used your redeem and got $20000!')
+            .setColor('#FFFFF')
+            .setTimestamp()
+        message.channel.send(embed)
+    }
+}
