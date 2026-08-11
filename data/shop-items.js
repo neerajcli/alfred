@@ -1,6 +1,6 @@
 module.exports = [
   {
-    id: "security",
+    id: "securty",
     name: "Security",
     emoji: "🛡️",
     price: 3000,
