@@ -43,18 +43,12 @@ npm install
 
 ```json
 {
-    "PREFIX" : "a!",
-    "TOKEN" : "YOUR BOT TOKEN HERE",
-     "developers" : [ 
-"YOUR DISCORD NAME"
-]
+  "TOKEN": "YOUR BOT TOKEN HERE",
+  "CLIENT_ID": "YOUR BOT CLIENT ID HERE",
+  "LOG_CHANNEL_ID": "YOUR LOG CHANNEL ID HERE",
+  "PREFIX": "YOUR DEFAULT PREFIX HERE",
+  "TOPGG_TOKEN": "YOUR TOP.GG TOKEN HERE"
 }
-```
-
-### Add the DBL API key in `index.js`
-
-```js
-const dbl = new DBL("YOUR DBL API KEY HERE", { webhookPort: 5000, webhookAuth: "YOUR DBL API KEY HERE" });
 ```
 
 ### Start the bot
